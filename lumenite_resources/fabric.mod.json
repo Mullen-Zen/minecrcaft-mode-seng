@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "lumenite_mod",
+  "version": "${version}",
+  "name": "Lumenite Mod",
+  "description": "Adds Lumenite ore, tools, and armor for the Software Engineering project.",
+  "authors": [
+    "Your Name(s)"
+  ],
+  "contact": {
+    "homepage": "[https://fabricmc.net/](https://fabricmc.net/)",
+    "sources": "[https://github.com/your-github/minecraft-mode-seng](https://github.com/your-github/minecraft-mode-seng)"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/lumenite_mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.LumeniteMod"
+    ],
+    "client": [
+      "com.example.ExampleModClient"
+    ],
+    "fabric-datagen": [
+      "com.example.LumeniteModDataGenerator"
+    ]
+  },
+  "mixins": [
+    "lumenite_mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": ">=1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
